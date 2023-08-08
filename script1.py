@@ -20,7 +20,7 @@ time.sleep(20)
 
 message='Hello we invite you to CTF organised by SARK'
 for phone_number in df['Phone']:
-            pywhatkit.sendwhats_image(f'{phone_number}', "hello.jpg")
+           # pywhatkit.sendwhats_image(f'{phone_number}', "hello.jpg")
             print("Sending msg to",phone_number)
             link = f'https://web.whatsapp.com/send/?phone={phone_number}&text={message}'
             driver.get(link)
